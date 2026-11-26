@@ -7,10 +7,11 @@
 <input name="entry.870682862" placeholder="WhatsApp number (optional)">
 <select name="entry.2019257684" required><option value="" disabled selected>Team size</option><option>1 to 4</option><option>5 to 20</option><option>21 to 50</option><option>50+</option></select>
 <input name="entry.1490357343" placeholder="Country" required>
-<textarea name="entry.534473773" rows="5" placeholder="Which process costs your team the most time?" required></textarea>
+<select name="entry.534473773" id="pain" required><option value="" disabled selected>Which process costs your team the most time?</option><option>Client enquiries and follow-up</option><option>Onboarding new clients or projects</option><option>Proposals and quotes</option><option>Invoicing and payment reminders</option><option>Reporting and spreadsheets</option><option>Team tasks and project tracking</option><option>Something else?</option></select>
+<textarea name="entry.1069339304" id="more" rows="4" placeholder="Tell us a little more (optional)"></textarea>
 <button class="btn copper" style="cursor:pointer">Book my audit</button>
 <small>We use your details only to reply to this enquiry.</small></form>
 <div id="thanks" style="display:none;max-width:560px;padding:36px;border-radius:28px;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.05)"><h3>Thank you.</h3><p>We'll reply within one working day to book your 20-minute discovery call.</p></div>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
-<script>var sent=false;document.getElementById("audit").addEventListener("submit",function(){sent=true});document.getElementById("hidden_iframe").addEventListener("load",function(){if(sent){document.getElementById("audit").style.display="none";document.getElementById("thanks").style.display="block"}});</script></section>
+<script>var sent=false;document.getElementById("audit").addEventListener("submit",function(){sent=true;var m=document.getElementById("more");if(!m.value.trim())m.value="n/a"});document.getElementById("hidden_iframe").addEventListener("load",function(){if(sent){document.getElementById("audit").style.display="none";document.getElementById("thanks").style.display="block"}});</script></section>
 <footer>&copy; 2026 Mic3 Solution Group. Registered in Kenya.</footer><script src="script.js"></script></body></html>

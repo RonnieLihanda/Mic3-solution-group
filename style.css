@@ -45,3 +45,22 @@ footer{padding:36px max(8%,24px);background:#1d1d1f;color:#86868b;font-size:13px
 .stat .lbl{font-weight:600;margin:10px 0 6px}.stat small{display:block}
 .two{display:grid;grid-template-columns:1fr 2fr;gap:50px}@media(max-width:800px){.two{grid-template-columns:1fr}}
 .two h2{font-size:34px}.two ul{padding-left:20px;color:var(--grey);font-size:19px}.two li{margin-bottom:12px}.two p{color:var(--grey);font-size:19px;margin-top:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:10px}
+.facts div{background:#fff;border-radius:20px;padding:22px;box-shadow:0 2px 14px rgba(0,0,0,.05)}
+.facts b{display:block;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--copper-d);margin-bottom:6px}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:12px 0 34px}
+.flow span{flex:1 1 130px;border-radius:18px;padding:18px 14px;text-align:center;font-weight:600;font-size:15px;position:relative}
+.flow.before span{background:#e8e4e0;color:#5b4f47}
+.flow.after span{background:var(--copper);color:#1d1d1f}
+.flow span:not(:last-child)::after{content:"\203A";position:absolute;right:-12px;top:50%;transform:translateY(-50%);font-size:24px;color:#5b4f47;z-index:2}
+.flowlabel{font-size:14px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--grey);margin:0}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.05);font-size:17px}
+.tbl th{background:#1d1d1f;color:#fff;text-align:left;padding:16px 20px;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.tbl td{padding:16px 20px;border-top:1px solid #eee;color:var(--grey);vertical-align:top}
+.tbl td:first-child{color:var(--ink);font-weight:600}
+.tbl td.win{color:var(--copper-d);font-weight:700}
+.bars{margin-top:30px}.bar{display:flex;align-items:center;gap:14px;margin:10px 0}.bar i{width:70px;font-style:normal;font-weight:600;font-size:15px}
+.bar em{display:block;height:34px;border-radius:10px;font-style:normal;color:#1d1d1f;font-weight:700;padding:6px 12px;font-size:15px;white-space:nowrap}
+.bar .b1{background:#cfc8c2;width:18%}.bar .b2{background:var(--copper);width:100%}
+.stack{display:block}.stack h2{font-size:34px}.stack .intro{color:var(--grey);font-size:19px;max-width:720px;margin:0 0 28px}
+@media(max-width:700px){.flow span:not(:last-child)::after{display:none}.tbl{font-size:15px}.tbl th,.tbl td{padding:12px}}

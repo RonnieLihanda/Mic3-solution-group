@@ -1,4 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mic3 Solution Group</title><link rel="stylesheet" href="style.css"></head><body><header><a href="index.html"><img src="assets/logo-black.png" alt="Mic3 Solution Group"></a><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="case-study.html">Case study</a><a href="about.html">About</a><a class="btn" href="book-an-audit.html">Book an audit</a></nav></header>
 <section class="page"><h2 class="reveal">Start with one process.</h2><p class="lead reveal">Tell us about the process that frustrates your team most. We'll reply within one working day to book a 20-minute discovery call. No cost, no obligation.</p>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeuugzOT75_ex-doepuzCczFILQBc9Z5oEHg3XPIechMA7hEw/viewform?embedded=true" title="Book a Workflow Audit" style="width:100%;max-width:700px;height:1050px;border:0;display:block;margin:2rem auto" frameborder="0" marginheight="0" marginwidth="0">Loading form...</iframe></section>
+<form id="audit" action="https://docs.google.com/forms/d/e/1FAIpQLSeuugzOT75_ex-doepuzCczFILQBc9Z5oEHg3XPIechMA7hEw/formResponse" method="POST" target="hidden_iframe">
+<input name="entry.1329735091" placeholder="Your name" required>
+<input name="entry.23538122" placeholder="Business name" required>
+<input name="entry.315054603" type="email" placeholder="Email" required>
+<input name="entry.870682862" placeholder="WhatsApp number (optional)">
+<select name="entry.2019257684" required><option value="" disabled selected>Team size</option><option>1 to 4</option><option>5 to 20</option><option>21 to 50</option><option>50+</option></select>
+<input name="entry.1490357343" placeholder="Country" required>
+<textarea name="entry.534473773" rows="5" placeholder="Which process costs your team the most time?" required></textarea>
+<button class="btn copper" style="cursor:pointer">Book my audit</button>
+<small>We use your details only to reply to this enquiry.</small></form>
+<div id="thanks" style="display:none;max-width:560px;padding:36px;border-radius:28px;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.05)"><h3>Thank you.</h3><p>We'll reply within one working day to book your 20-minute discovery call.</p></div>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
+<script>var sent=false;document.getElementById("audit").addEventListener("submit",function(){sent=true});document.getElementById("hidden_iframe").addEventListener("load",function(){if(sent){document.getElementById("audit").style.display="none";document.getElementById("thanks").style.display="block"}});</script></section>
 <footer>&copy; 2026 Mic3 Solution Group. Registered in Kenya.</footer><script src="script.js"></script></body></html>
